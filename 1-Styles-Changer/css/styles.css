@@ -1,0 +1,147 @@
+/* Reset*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 16px;
+  background: linear-gradient(to left, #c5d86d, #1b998b);
+  height: 100vh;
+}
+
+.main {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: calc(5rem + 2vh);
+}
+
+.main-title {
+  color: #2e294e;
+  font-size: calc(1rem + 3vw);
+  padding-top: calc(2rem + 1vh);
+  text-align: center;
+}
+
+.changers {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12.5rem, 1fr));
+  gap: 1rem;
+
+  padding: 0 5rem;
+}
+
+.changers__changer {
+  background-color: #2e294e;
+  border-radius: 0.5rem;
+  padding: 1rem 2rem;
+  box-shadow: 5px 5px 5px 0;
+}
+
+.changers__changer--heading,
+.changers__changer--controls label {
+  color: #fffffc;
+}
+
+.changers__changer--heading {
+  font-size: calc(0.5rem + 1vw);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.changers__changer--controls {
+  display: flex;
+  flex-direction: column-reverse;
+  row-gap: 1rem;
+}
+
+.changers__changer--controls label {
+  font-size: calc(0.25rem + 1vw);
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.changers__changer--controls input {
+  width: 100%;
+}
+
+.changers__changer--controls.vertical {
+  height: calc(8rem + 2vh);
+
+  flex-direction: row-reverse;
+  justify-content: center;
+}
+
+.changers__changer--controls.vertical label {
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.changers__changer--controls.vertical input {
+  transform: rotate(90deg);
+  width: calc(8rem + 2vh);
+}
+
+.changers__changer--controls select {
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  outline: none;
+}
+
+.changers__changer--controls.background {
+  flex-direction: column;
+}
+
+.changers__changer--controls.background div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.changers__changer--controls.background label {
+  width: 100%;
+}
+
+.shape-container {
+  padding: 0 5rem 5rem 2rem;
+  position: relative;
+}
+
+.shape {
+  position: absolute;
+  background-color: #f46036;
+  box-shadow: 2px 2px 5px 0;
+  top: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.square,
+.circle,
+.rectangle,
+.triangle {
+  height: 8rem;
+  width: 8rem;
+}
+
+.circle {
+  border-radius: 50%;
+}
+
+.rectangle {
+  width: 20rem;
+}
+
+@media screen and (max-width: 400px) {
+  body {
+    height: 120vh;
+  }
+}
