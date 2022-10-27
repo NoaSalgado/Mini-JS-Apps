@@ -48,17 +48,19 @@ body {
   transition: all 0.2s ease;
 }
 
-.search-btn:hover {
-  background-color: #ced0ce;
-}
-
 .search-btn i {
   color: #e6e8e6;
   font-size: 2.4rem;
 }
 
-.search-btn:hover i {
-  color: #f15025;
+@media (hover: hover) {
+  .search-btn:hover {
+    background-color: #ced0ce;
+  }
+
+  .search-btn:hover i {
+    color: #f15025;
+  }
 }
 
 .display-search .search-input {
