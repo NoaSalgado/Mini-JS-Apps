@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 1.8rem;
+}
+
+.main {
+  background-color: #598392;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form {
+  background-color: #01161e;
+  border-radius: 0.5rem;
+  box-shadow: 10px 10px 5px 0 #124559;
+  padding: 5rem;
+  width: 50%;
+
+  display: flex;
+  flex-direction: column;
+  row-gap: 3rem;
+}
+
+.form__control {
+  border: none;
+  position: relative;
+}
+
+.form__control input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 3px solid #124559;
+  color: #fff;
+  outline: none;
+  padding: 2rem 1rem;
+  width: 100%;
+
+  display: block;
+}
+
+.form__control label {
+  color: #80ded9;
+  font-weight: bold;
+  position: absolute;
+  top: 2.5rem;
+}
+
+.form__control label span {
+  display: inline-block;
+  transition: all 0.3s ease-in;
+}
+
+.form__control input:focus + label span {
+  transform: translateY(-30px);
+  color: #598392;
+}
+
+.form__submit-btn {
+  background-color: #80ded9;
+  border: 1px solid transparent;
+  border-radius: 0.5rem;
+  color: #01161e;
+  font-size: 1.4rem;
+  font-weight: bold;
+  padding: 1rem 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.form__submit-btn:hover {
+  background-color: #01161e;
+  border-color: #80ded9;
+  color: #80ded9;
+}
+
+.form__link {
+  align-self: flex-end;
+  font-size: 1.4rem;
+  color: #80ded9;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.form__link:hover {
+  color: #598392;
+}
+
+@media (max-width: 500px) {
+  .form {
+    width: 80%;
+  }
+}
