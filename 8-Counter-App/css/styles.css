@@ -1,0 +1,95 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+}
+
+.main,
+.counter,
+.counter__btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main {
+  background-color: #748cab;
+  height: 100vh;
+}
+
+.counter {
+  background-color: #1d2d44;
+  border-radius: 0.5rem;
+  padding: 5rem;
+  width: 50%;
+
+  flex-direction: column;
+  row-gap: 2rem;
+}
+
+.counter__title,
+.counter__number {
+  color: #f0ebd8;
+}
+
+.counter__title {
+  font-size: 3.2rem;
+}
+
+.counter__number {
+  font-size: 4.8rem;
+}
+
+.counter__btns {
+  width: 100%;
+
+  justify-content: space-between;
+}
+
+.counter__btns button {
+  border: none;
+  border-radius: 0.5rem;
+  color: #1d2d44;
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding: 1rem 2rem;
+}
+
+.counter__btns--subtract {
+  background-color: #e5383b;
+}
+
+.counter__btns--reset {
+  background-color: #f0ebd8;
+}
+
+.counter__btns--add {
+  background-color: #87c38f;
+}
+
+@media (max-width: 600px) {
+  .counter {
+    width: 80%;
+  }
+}
+
+@media (max-width: 400px) {
+  .counter__title {
+    font-size: 2rem;
+  }
+
+  .counter__btns {
+    flex-direction: column;
+    row-gap: 2rem;
+  }
+}
