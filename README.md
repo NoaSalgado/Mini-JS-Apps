@@ -16,3 +16,4 @@ This repository contains small apps that I made to practice
 | Counter App             | [Code](./8-Counter-App/)               | [View Live](https://noasalgado.github.io/Mini-JS-Apps/8-Counter-App/)               |
 | Remaining Characters    | [Code](./9-Remaining-Charactes-Count/) | [View Live](https://noasalgado.github.io/Mini-JS-Apps/9-Remaining-Charactes-Count/) |
 | Random Number Generator | [Code](./10-Random-Number-Generator/)  | [View Live](https://noasalgado.github.io/Mini-JS-Apps/10-Random-Number-Generator/)  |
+| Vowel Counter           | [Code](./11-Vowel-Counter/)            | [View Live](https://noasalgado.github.io/Mini-JS-Apps/11-Vowel-Counter/)            |
