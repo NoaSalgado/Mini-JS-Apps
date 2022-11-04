@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/app.js" defer></script>
+    <title>Show Modal</title>
+  </head>
+  <body>
+    <main class="main">
+      <h1 class="heading">Want To See A Modal?</h1>
+      <p class="text">
+        Click the button
+        <span><i class="fa-solid fa-arrow-down icon"></i></span>
+      </p>
+      <button class="show-btn">Show!</button>
+    </main>
+
+    <div class="modal">
+      <button class="modal__close-btn">&times;</button>
+      <h2 class="modal__title">Hi! I´m a modal 😎</h2>
+      <p class="modal__text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam tenetur
+        inventore neque ipsam praesentium dignissimos earum hic vero minus
+        voluptates, necessitatibus ullam architecto voluptas corporis.
+      </p>
+    </div>
+
+    <div class="overlay hidden"></div>
+  </body>
+</html>

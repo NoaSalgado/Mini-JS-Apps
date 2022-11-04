@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: "Lato", sans-serif;
+  font-size: 62.5%;
+  --gradient-color: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgba(255, 209, 67, 1) 0%,
+    rgba(255, 145, 83, 1) 90%
+  );
+  --white-color: #eff7f6;
+}
+
+body {
+  background-image: var(--gradient-color);
+  height: 100vh;
+  position: relative;
+}
+
+.main {
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 3rem;
+}
+
+.heading {
+  color: var(--white-color);
+  font-size: calc(2rem + 2vw);
+}
+
+.text {
+  color: var(--white-color);
+  font-size: calc(1.6rem + 1vw);
+}
+
+.text span {
+  display: block;
+  text-align: center;
+}
+
+.show-btn {
+  background-color: var(--white-color);
+  border: 3px solid transparent;
+  border-radius: 2rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  padding: 2rem;
+  transition: all 0.3s ease-in-out;
+}
+
+@media (hover: hover) {
+  .show-btn:hover {
+    background-color: transparent;
+    border-color: var(--white-color);
+    color: white;
+  }
+}
+
+.modal {
+  background-color: var(--white-color);
+  border-radius: 0.5rem;
+  padding: 2rem 4rem 4rem 4rem;
+  width: 70%;
+
+  position: absolute;
+  top: -150%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  transition: all 0.5s ease;
+  z-index: 10;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 2rem;
+}
+
+.modal.display {
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal__close-btn {
+  background: transparent;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+
+  align-self: flex-end;
+}
+
+.modal__title {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.modal__text {
+  font-size: 1.6rem;
+}
+
+.overlay.show {
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  height: 100%;
+  width: 100%;
+  transition: all 0.3s ease-in;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  z-index: 5;
+}
