@@ -1,0 +1,58 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.main,
+.buttons-container {
+  display: flex;
+}
+
+.main {
+  background: linear-gradient(89deg, #ff5edf 0%, #04c8dc 100%);
+  min-height: 100vh;
+  width: 100vw;
+
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 10rem;
+}
+
+.heading {
+  color: #fff;
+  font-size: calc(3.2rem + 2vw);
+}
+
+.buttons-container {
+  width: 70%;
+
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.btn {
+  background-color: #3a0ca3;
+  border: none;
+  border-radius: 0.5rem;
+  color: #fff;
+  font-size: 1.8rem;
+
+  padding: 1rem 2rem;
+  transition: background-color 0.3s ease-in-out;
+}
+
+@media (hover: hover) {
+  .btn:hover {
+    background-color: #7209b7;
+  }
+}

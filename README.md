@@ -19,3 +19,4 @@ This repository contains small apps that I made to practice
 | Vowel Counter           | [Code](./11-Vowel-Counter/)            | [View Live](https://noasalgado.github.io/Mini-JS-Apps/11-Vowel-Counter/)            |
 | Palindrome Checker      | [Code](./Palindrome-Checker/)          | [View Live](https://noasalgado.github.io/Mini-JS-Apps/Palindrome-Checker/)          |
 | Show Modal              | [Code](./Show-Modal/)                  | [View Live](https://noasalgado.github.io/Mini-JS-Apps/Show-Modal/)                  |
+| Sound Board             | [Code](./Sound-Board/)                 | [View Live](https://noasalgado.github.io/Mini-JS-Apps/Sound-Board/)                 |
