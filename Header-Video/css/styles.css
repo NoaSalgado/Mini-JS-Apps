@@ -1,0 +1,89 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.header {
+  height: 100vh;
+  position: relative;
+
+  display: grid;
+  place-items: center;
+}
+
+.header::after,
+.header::before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 100%;
+  width: 100%;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.video-container {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.heading {
+  color: #fff;
+  font-size: calc(3.2rem + 2vw);
+  text-align: center;
+  z-index: 1;
+}
+
+.switch-btn {
+  background-color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  width: 10rem;
+
+  position: absolute;
+  bottom: 10%;
+  z-index: 1;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.switch-btn span {
+  display: inline-block;
+}
+
+.switch {
+  background-color: #000;
+  border-radius: 0.5rem;
+  width: 51%;
+  height: 100%;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: block;
+  transition: all 0.5s ease;
+}
+
+.switch.slide {
+  transform: translate(100%);
+}

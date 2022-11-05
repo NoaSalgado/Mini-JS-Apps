@@ -21,3 +21,4 @@ This repository contains small apps that I made to practice
 | Show Modal              | [Code](./Show-Modal/)                  | [View Live](https://noasalgado.github.io/Mini-JS-Apps/Show-Modal/)                  |
 | Sound Board             | [Code](./Sound-Board/)                 | [View Live](https://noasalgado.github.io/Mini-JS-Apps/Sound-Board/)                 |
 | Testimonials Carousel   | [Code](./Testimonials-Carousel/)       | [View Live](https://noasalgado.github.io/Mini-JS-Apps/Testimonials-Carousel/)       |
+| Header Video            | [Code](./Header-Video/)                | [View Live](https://noasalgado.github.io/Mini-JS-Apps/Header-Video/)                |
