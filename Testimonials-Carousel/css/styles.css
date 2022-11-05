@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Montserrat", sans-serif;
+  --bg-color: #fffafb;
+  --primary-color: #339989;
+  --secondary-solor: #7de2d1;
+  --font-color: #2b2c28;
+}
+
+.main,
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main {
+  background-color: var(--bg-color);
+  min-height: 100vh;
+
+  row-gap: 3rem;
+}
+
+.heading {
+  color: var(--font-color);
+  font-size: 3.2rem;
+  line-height: 2;
+}
+
+.heading__underline {
+  background-color: var(--primary-color);
+  height: 0.5rem;
+  width: 10rem;
+
+  display: block;
+  margin: 0 auto;
+}
+
+.testimonial {
+  background-color: var(--bg-color);
+  border-radius: 0.5rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+  width: 50vw;
+
+  row-gap: 1.5rem;
+}
+
+.testimonial__img {
+  border: 5px solid var(--primary-color);
+  border-radius: 50%;
+
+  height: 10rem;
+  width: 10rem;
+}
+
+.testimonial__img img {
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.testimonial__name {
+  color: var(--font-color);
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.testimonial__role {
+  color: var(--secondary-solor);
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.testimonial__text {
+  color: var(--font-color);
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.testimonial__prev-btn,
+.testimonial__next-btn {
+  background: transparent;
+  border: 3px solid var(--primary-color);
+  border-radius: 0.2rem;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.testimonial__prev-btn i,
+.testimonial__next-btn i {
+  color: var(--primary-color);
+  font-size: 2rem;
+}
+
+.testimonial__random-btn {
+  border: none;
+  border-radius: 0.5rem;
+  background-color: var(--primary-color);
+  color: var(--bg-color);
+  font-size: 1.8rem;
+  cursor: pointer;
+  padding: 1rem 2rem;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.testimonial__random-btn:hover {
+  background-color: var(--secondary-solor);
+}
