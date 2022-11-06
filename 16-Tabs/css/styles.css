@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Montserrat", sans-serif;
+  --bg-color: #f1f5f8;
+  --bg-color-light: #fff;
+  --font-color: #081c15;
+  --primary-color: #2d6a4f;
+  --primary-color-light-l: #74c69d;
+  --primary-color-light-m: #95d5b2;
+  --primary-color-light-s: #b7e4c7;
+}
+
+.main {
+  background-color: var(--bg-color);
+  min-height: 100vh;
+}
+
+.header {
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.header__title {
+  color: var(--primary-color);
+  font-size: 3.2rem;
+  margin-bottom: 2rem;
+}
+
+.header__text {
+  color: var(--primary-color-light-l);
+  font-size: 2rem;
+}
+
+.about {
+  padding: 4rem 6rem;
+  width: 100vw;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  column-gap: 3rem;
+  row-gap: 3rem;
+}
+
+.about__img {
+  border-radius: 0.5rem;
+}
+
+.about__img img {
+  border-radius: 0.5rem;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.about__content--btns {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.about__content--btns button {
+  background-color: var(--primary-color-light-m);
+  border: none;
+  color: var(--font-color);
+  font-size: 1.8rem;
+  padding: 1rem 0;
+  transition: background-color 0.25s ease-in-out;
+}
+
+.about__content--btns button:hover:not(.active) {
+  background-color: var(--primary-color-light-s);
+}
+
+.about__content--btns button:first-of-type {
+  border-top-left-radius: 0.5rem;
+}
+
+.about__content--btns button:last-of-type {
+  border-top-right-radius: 0.5rem;
+}
+
+.about__content--btns .active {
+  background-color: var(--bg-color-light);
+}
+
+.about__content--text {
+  background-color: var(--bg-color-light);
+  padding: 4rem 2rem;
+}
+
+.about__content--text div {
+  display: none;
+}
+
+.about__content--text div h4 {
+  color: var(--primary-color);
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.about__content--text div p {
+  color: var(--font-color);
+  font-size: 1.6rem;
+}
+
+.about__content--text div p:first-of-type {
+  margin-bottom: 2rem;
+}
+
+.about__content--text .display {
+  display: block;
+}

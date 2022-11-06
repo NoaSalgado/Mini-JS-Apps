@@ -22,3 +22,4 @@ This repository contains small apps that I made to practice
 | Sound Board             | [Code](./Sound-Board/)                 | [View Live](https://noasalgado.github.io/Mini-JS-Apps/Sound-Board/)                 |
 | Testimonials Carousel   | [Code](./Testimonials-Carousel/)       | [View Live](https://noasalgado.github.io/Mini-JS-Apps/Testimonials-Carousel/)       |
 | Header Video            | [Code](./Header-Video/)                | [View Live](https://noasalgado.github.io/Mini-JS-Apps/Header-Video/)                |
+| Tabs                    | [Code](./16-Tabs/)                     | [View Live](https://noasalgado.github.io/Mini-JS-Apps/16-Tabs/)                     |
