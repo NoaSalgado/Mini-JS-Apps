@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.main {
+  background: linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(253, 187, 45, 1) 100%
+  );
+  font-family: "Roboto", sans-serif;
+  min-height: 100vh;
+  padding: 0 2rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 3rem;
+}
+
+.main-heading,
+.instructions-heading {
+  color: #16697a;
+  text-align: center;
+}
+.main-heading {
+  font-size: calc(3.2rem + 2vw);
+  text-align: center;
+}
+
+.instructions-heading {
+  font-size: 2rem;
+  line-height: 1.5;
+}
+
+.instructions-heading span {
+  display: block;
+}
+
+.choices-textarea {
+  background-color: #ede7e3;
+  border: 2px solid #489fb5;
+  border-radius: 0.5rem;
+  color: #489fb5;
+  font-size: 1.6rem;
+  outline: none;
+  padding: 0.5rem;
+  width: 50vw;
+  resize: none;
+}
+
+.choice-tags {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 0.5rem;
+}
+
+.choice-tag {
+  background-color: #ffa62b;
+  border-radius: 1rem;
+  color: #ede7e3;
+  font-size: 1.8rem;
+  padding: 0.8rem;
+}
+
+.choice-tag.active {
+  background-color: #489fb5;
+}
+
+.picked-choice {
+  color: #ede7e3;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.picked-choice span {
+  color: #ffa62b;
+  font-size: 2.4rem;
+}
+
+.new-choice-btn {
+  border: 3px solid transparent;
+  border-radius: 0.5rem;
+  background-color: #16697a;
+  color: #ede7e3;
+  font-size: 1.6rem;
+  font-weight: 700;
+  padding: 1rem;
+  visibility: hidden;
+  transition: all 0.25s ease-in-out;
+}
+
+.new-choice-btn:hover {
+  background-color: transparent;
+  border-color: #ede7e3;
+}
+
+.new-choice-btn.show {
+  visibility: visible;
+}

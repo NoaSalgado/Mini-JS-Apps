@@ -23,3 +23,4 @@ This repository contains small apps that I made to practice
 | Testimonials Carousel   | [Code](./Testimonials-Carousel/)       | [View Live](https://noasalgado.github.io/Mini-JS-Apps/Testimonials-Carousel/)       |
 | Header Video            | [Code](./Header-Video/)                | [View Live](https://noasalgado.github.io/Mini-JS-Apps/Header-Video/)                |
 | Tabs                    | [Code](./16-Tabs/)                     | [View Live](https://noasalgado.github.io/Mini-JS-Apps/16-Tabs/)                     |
+| Random Choice Picker    | [Code](./17-Random-Choice-Picker/)     | [View Live](https://noasalgado.github.io/Mini-JS-Apps/17-Random-Choice-Picker/)     |
