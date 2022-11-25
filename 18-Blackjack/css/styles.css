@@ -212,3 +212,22 @@ body {
 .overlay.hidden {
   display: none;
 }
+
+/******MEDIA QUERIES******/
+@media screen and (max-width: 650px) {
+  .btn {
+    font-size: 1.6rem;
+  }
+
+  .game__header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 3rem;
+  }
+
+  .modal {
+    padding: 3rem;
+    width: 80%;
+  }
+}
