@@ -25,3 +25,4 @@ This repository contains small apps that I made to practice
 | Tabs                    | [Code](./16-Tabs/)                     | [View Live](https://noasalgado.github.io/Mini-JS-Apps/16-Tabs/)                     |
 | Random Choice Picker    | [Code](./17-Random-Choice-Picker/)     | [View Live](https://noasalgado.github.io/Mini-JS-Apps/17-Random-Choice-Picker/)     |
 | Blackjack               | [Code](./18-Blackjack/)                | [View Live](https://noasalgado.github.io/Mini-JS-Apps/18-Blackjack/)                |
+| Text Reader             | [Code](./19-Text-Reader/)              | [View Live](https://noasalgado.github.io/Mini-JS-Apps/19-Text-Reader/)              |

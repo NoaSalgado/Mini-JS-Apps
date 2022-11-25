@@ -1,0 +1,84 @@
+/******RESET******/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/******GLOBAL STYLES******/
+html {
+  font-size: 62.5%;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.btn,
+input {
+  border-radius: 0.5rem;
+  font-size: 2rem;
+  padding: 1rem;
+  background-color: #fb8500;
+  border: none;
+  color: #023047;
+  font-weight: bold;
+}
+
+.btn {
+  cursor: pointer;
+  transition: background-color 0.25s ease-in-out;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #ffb703;
+}
+
+/******READER STYLES******/
+.main {
+  background-color: #219ebc;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-reader {
+  background-color: #023047;
+  border-radius: 0.5rem;
+  padding: 5rem;
+  width: 80%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 3rem;
+}
+
+.text-display {
+  color: #023047;
+  font-size: 1.6rem;
+  height: 20rem;
+  width: 100%;
+  padding: 1rem;
+  resize: none;
+}
+
+.controls-wrapper {
+  display: flex;
+  gap: 2rem;
+}
+
+label {
+  color: #fb8500;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-right: 1.5rem;
+}
+
+@media screen and (max-width: 700px) {
+  .controls-wrapper {
+    flex-direction: column;
+  }
+}
