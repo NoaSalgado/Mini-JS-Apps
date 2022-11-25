@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@1,700&family=Poppins:wght@400;600"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/underscore@1.13.6/underscore-umd-min.js"
+      defer
+    ></script>
+    <script src="js/app.js" defer></script>
+    <title>Blackjack Game</title>
+  </head>
+  <body>
+    <!--Start Screen-->
+    <section class="start-screen">
+      <h1 class="start-screen__heading">Blackjack</h1>
+
+      <div class="start-screen__icons">
+        <span>♥️</span>
+        <span>♠️</span>
+        <span>♦️</span>
+        <span>♣️</span>
+      </div>
+
+      <button class="start-screen__btn">Start Game!</button>
+    </section>
+
+    <!--Game Screen-->
+    <main class="game">
+      <header class="game__header">
+        <h2 class="game__header--heading">Blackjack</h2>
+        <section class="game__header--controls">
+          <button class="restart-game-btn btn">Restart Game</button>
+          <button class="ask-card-btn btn">Ask Card</button>
+          <button class="stop-btn btn">Stop Game</button>
+        </section>
+      </header>
+
+      <section class="game__player-zone">
+        <h3>Player - <span></span></h3>
+        <div id="player-cards" class="cards-container"></div>
+      </section>
+
+      <section class="game__computer-zone">
+        <h3>Computer - <span></span></h3>
+        <div id="computer-cards" class="cards-container"></div>
+      </section>
+    </main>
+
+    <!--Modal-->
+    <div class="modal">
+      <p class="modal-text"></p>
+      <div class="modal-btns">
+        <button class="new-game-btn btn">Play Again</button>
+        <button class="quit-btn btn">Quit</button>
+      </div>
+    </div>
+    <div class="overlay hidden"></div>
+  </body>
+</html>

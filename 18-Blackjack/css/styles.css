@@ -1,0 +1,214 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+  font-size: 62.5%;
+}
+
+body {
+  position: relative;
+}
+
+.btn {
+  border: none;
+  border-radius: 0.5rem;
+  color: #f2e8cf;
+  font-size: 2rem;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 1rem;
+  transition: all 0.25s ease-in-out;
+}
+
+.btn:hover,
+.btn:active {
+  opacity: 0.7;
+}
+
+/******START SCREEN STYLES ******/
+.start-screen {
+  background-color: #000;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.5s ease;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 3rem;
+}
+
+.start-screen.hidden {
+  display: none;
+}
+
+.start-screen__heading {
+  color: #f2e8cf;
+  font-family: "Arvo", serif;
+  font-size: calc(5.2rem + 2vw);
+}
+
+.start-screen__icons {
+  display: flex;
+  gap: 2rem;
+}
+
+.start-screen__icons span {
+  font-size: 5.2rem;
+}
+
+.start-screen__icons span:nth-of-type(2n + 1) {
+  color: #bc4749;
+}
+
+.start-screen__icons span:nth-of-type(2n) {
+  color: #f2e8cf;
+}
+
+.start-screen__btn {
+  background-color: #f2e8cf;
+  border: 3px solid transparent;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 2.4rem;
+  padding: 2rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.start-screen__btn:hover,
+.start-screen__btn:active {
+  background-color: transparent;
+  border-color: #f2e8cf;
+  color: #f2e8cf;
+}
+
+/*******GAME SCREEN STYLES******/
+.game {
+  background-color: #6a994e;
+  min-height: 100vh;
+}
+
+.game__header {
+  padding: 2rem;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.game__header--heading {
+  font-family: "Arvo", serif;
+  font-size: 3.2rem;
+}
+
+.game__header--controls {
+  display: flex;
+  gap: 2rem;
+}
+
+.restart-game-btn {
+  background-color: #000;
+}
+
+.ask-card-btn {
+  background-color: #f2e8cf;
+  color: #000;
+}
+
+.stop-btn {
+  background-color: #bc4749;
+}
+
+.game__player-zone,
+.game__computer-zone {
+  padding: 0 4rem;
+  height: 20rem;
+}
+
+.game__player-zone h3,
+.game__computer-zone h3 {
+  color: #f2e8cf;
+  font-size: 2.4rem;
+  font-weight: 400;
+}
+
+.cards-container {
+  display: flex;
+}
+
+.cards-container img {
+  margin-left: -4.5rem;
+  width: 10rem;
+}
+
+.cards-container img:first-child {
+  margin-left: 0;
+}
+
+/******MODAL & OVERLAY STYLES******/
+.modal {
+  background-color: #f2e8cf;
+  border-radius: 0.5rem;
+  padding: 5rem;
+  width: 50%;
+
+  position: absolute;
+  top: -150%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  transition: all 0.5s ease;
+  z-index: 10;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 3rem;
+}
+
+.modal.display {
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal-text {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.modal-btns {
+  display: flex;
+  column-gap: 3rem;
+}
+
+.new-game-btn {
+  background-color: #386641;
+}
+
+.quit-btn {
+  background-color: #bc4749;
+}
+
+.overlay {
+  background-color: rgba(0 0 0 /0.6);
+  backdrop-filter: blur(3px);
+  height: 100%;
+  width: 100%;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.overlay.hidden {
+  display: none;
+}
