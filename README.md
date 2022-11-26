@@ -28,3 +28,4 @@ This repository contains small apps that I made to practice
 | Text Reader             | [Code](./19-Text-Reader/)              | [View Live](https://noasalgado.github.io/Mini-JS-Apps/19-Text-Reader/)              |
 | Drag & Drop             | [Code](./20-Drag-and-Drop/)            | [View Live](https://noasalgado.github.io/Mini-JS-Apps/20-Drag-and-Drop/)            |
 | Temperature Converter   | [Code](./21-Temperature-Converter/)    | [Live](https://noasalgado.github.io/Mini-JS-Apps/21-Temperature-Converter/)         |
+| Mouse Gallery Scroller  | [Code](./22-Mouse-Gallery-Scroller/)   | [Live](https://noasalgado.github.io/Mini-JS-Apps/22-Mouse-Gallery-Scroller/)        |
