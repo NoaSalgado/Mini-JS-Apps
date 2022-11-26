@@ -26,3 +26,4 @@ This repository contains small apps that I made to practice
 | Random Choice Picker    | [Code](./17-Random-Choice-Picker/)     | [View Live](https://noasalgado.github.io/Mini-JS-Apps/17-Random-Choice-Picker/)     |
 | Blackjack               | [Code](./18-Blackjack/)                | [View Live](https://noasalgado.github.io/Mini-JS-Apps/18-Blackjack/)                |
 | Text Reader             | [Code](./19-Text-Reader/)              | [View Live](https://noasalgado.github.io/Mini-JS-Apps/19-Text-Reader/)              |
+| Drag & Drop             | [Code](./20-Drag-and-Drop/)            | [View Live](https://noasalgado.github.io/Mini-JS-Apps/20-Drag-and-Drop/)            |
