@@ -27,3 +27,4 @@ This repository contains small apps that I made to practice
 | Blackjack               | [Code](./18-Blackjack/)                | [View Live](https://noasalgado.github.io/Mini-JS-Apps/18-Blackjack/)                |
 | Text Reader             | [Code](./19-Text-Reader/)              | [View Live](https://noasalgado.github.io/Mini-JS-Apps/19-Text-Reader/)              |
 | Drag & Drop             | [Code](./20-Drag-and-Drop/)            | [View Live](https://noasalgado.github.io/Mini-JS-Apps/20-Drag-and-Drop/)            |
+| Temperature Converter   | [Code](./21-Temperature-Converter/)    | [Live](https://noasalgado.github.io/Mini-JS-Apps/21-Temperature-Converter/)         |
