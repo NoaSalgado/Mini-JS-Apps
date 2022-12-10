@@ -1,0 +1,104 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-image: linear-gradient(
+    45deg,
+    hsl(240deg 100% 20%) 0%,
+    hsl(289deg 100% 21%) 11%,
+    hsl(315deg 100% 27%) 22%,
+    hsl(329deg 100% 36%) 33%,
+    hsl(337deg 100% 43%) 44%,
+    hsl(357deg 91% 59%) 56%,
+    hsl(17deg 100% 59%) 67%,
+    hsl(34deg 100% 53%) 78%,
+    hsl(45deg 100% 50%) 89%,
+    hsl(55deg 100% 50%) 100%
+  );
+  font-family: "Arvo", cursive;
+  min-height: 100vh;
+}
+
+main {
+  padding: 4rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 10rem;
+}
+
+h1 {
+  color: #dbedf3;
+  font-size: 5rem;
+  text-shadow: 3px 0 #da0463;
+  text-align: center;
+}
+
+.drum-set {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.drum-sound {
+  background-color: #fffcff;
+  border: 5px solid #404b69;
+  border-radius: 1rem;
+  color: #da0463;
+  font-size: calc(1.6rem + 2vw);
+  font-family: "Arvo", cursive;
+  text-shadow: 3px 0 #dbedf3;
+
+  height: 15rem;
+  width: 15rem;
+  outline: none;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.drum-sound.playing {
+  box-shadow: 0 3px 4px 0 #dbedf3;
+  opacity: 0.5;
+}
+
+.drum-sound[data-sound="tom-1"] {
+  background-image: url(../images/tom1.png);
+}
+
+.drum-sound[data-sound="tom-2"] {
+  background-image: url(../images/tom2.png);
+}
+
+.drum-sound[data-sound="tom-3"] {
+  background-image: url(../images/tom3.png);
+}
+
+.drum-sound[data-sound="tom-4"] {
+  background-image: url(../images/tom4.png);
+}
+
+.drum-sound[data-sound="snare"] {
+  background-image: url(../images/snare.png);
+}
+
+.drum-sound[data-sound="crash"] {
+  background-image: url(../images/crash.png);
+}
+
+.drum-sound[data-sound="kick-bass"] {
+  background-image: url(../images/kick.png);
+}
